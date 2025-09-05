@@ -1,0 +1,26 @@
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 999;
+}
+
+.header-inner {
+  width: 100%;
+  height: var(--height-header);
+  background: transparent;
+  display: flex;
+  align-items: center; /* chcao */
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+}
+
+.header-link {
+  color: var(--body-text-color);
+}

@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+// import logo from './logo.svg';
+// import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import { publicRoutes } from "./routes/routes";
+import DefaultLayout from "./layout/DefaultLayout/DefaultLayout";
+import { Fragment } from "react/jsx-runtime";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {publicRoutes.map((route, index) => {
+        const Page = route.component;
+        //  nếu ko chỉ định layout => undefine => sẽ lấy cái DefaultLayout
+        let Layout = DefaultLayout;
+        if (route.layout) {
+          Layout = route.layout;
+        } else if (route.layout === null) {
+          Layout = Fragment;
+        }
+        return (
+          <Layout>
+            <Page />
+          </Layout>
+        );
+      })}
     </div>
   );
 }

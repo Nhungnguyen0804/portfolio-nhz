@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Pacifico";
+  /* toi uu tren nhieu trinh duyet */
+  src: url("../../assets/fonts/Pacifico-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/Pacifico-Regular.woff") format("woff"),
+    url("../../assets/fonts/Pacifico-Regular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --body-bg-color: black;
+  --body-text-color: white;
+
+  --height-header: 60px;
+}
+
+body {
+  /* font-family: "Calibri", sans-serif; */
+  height: 100vh;
+  background: var(--body-bg-color);
+  color: var(--body-text-color);
+}
+
+/* cho tất cả các phần tử trên trang. */
+/* reset css  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* tính luôn cả nội dung + padding + border. */
+}
+
+a {
+  text-decoration: none;
+  color: var(--body-text-color);
+}
+
+a:visited {
+  color: var(--body-text-color);
+}
+a:active {
+  color: var(--body-text-color);
+}
+
+/* CSS chỉ áp dụng cho màn hình có chiều rộng tối đa 768px (mobile và tablet) */
+@media (max-width: 768px) {
+}

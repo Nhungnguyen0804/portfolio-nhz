@@ -1,0 +1,6 @@
+import './X.css'
+
+function X() { return ;}
+export default X;
+
+ctrl D - chọn nhiều

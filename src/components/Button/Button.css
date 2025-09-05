@@ -1,0 +1,49 @@
+.btn-wrapper {
+  font-size: 1.6rem;
+  font-weight: 700;
+  min-width: 100px;
+  padding: 9px 16px;
+  border-radius: 4px;
+  background-color: var(--body-text-color);
+
+  display: flex;
+  justify-content: center;
+}
+
+.btn-wrapper:hover {
+}
+
+/* btn forecast , temp,rain,wind ===============  */
+.activeBtn {
+}
+
+.btn-cycle {
+  /* border-radius: 999%; */
+  padding: 10px;
+  border-radius: 50%;
+  min-width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--body-text-color);
+}
+
+.btn-transparent {
+}
+.btn-transparent:hover {
+}
+
+.btn-square {
+}
+
+/* size của btn: small medium large  */
+.btn-medium {
+}
+
+/* icon lech thi flex align center  */
+.button-icon {
+  display: flex;
+  align-items: center;
+}
