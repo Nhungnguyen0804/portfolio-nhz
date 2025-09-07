@@ -1,6 +1,5 @@
 // import logo from './logo.svg';
 // import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
 import { publicRoutes } from "./routes/routes";
 import DefaultLayout from "./layout/DefaultLayout/DefaultLayout";
 import { Fragment } from "react/jsx-runtime";

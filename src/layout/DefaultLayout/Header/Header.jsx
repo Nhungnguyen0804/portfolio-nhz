@@ -1,20 +1,24 @@
 import "./Header.css";
-import Navbar from "../../../components/Navbar/Navbar";
-import { GithubIcon, EmailIcon } from "../../../components/Icon/Icon";
+import NavbarMenu from "../../../components/NavbarMenu/NavbarMenu";
+import {
+  GithubIcon,
+  EmailIcon,
+  LinkedInIcon,
+} from "../../../components/Icon/Icon";
 
 import Button from "../../../components/Button/Button";
 function Header() {
-  const sizeIcon = "30px";
+  const sizeIcon = "25px";
   return (
     <div className="header-wrapper">
       <div className="header-inner">
         <div className="logo">Nhung Nhz</div>
 
         <div className="header-navbar">
-          <Navbar />
+          <NavbarMenu />
         </div>
         <div
-          className="header-link"
+          className="header-social-icon"
           style={{
             display: "flex",
             justifyContent: "center",
@@ -31,6 +35,12 @@ function Header() {
           <Button
             external="mailto:nhungnguyen8404@gmail.com"
             iconLeft={<EmailIcon width={sizeIcon} height={sizeIcon} />}
+            type="cycle"
+            target="_blank"
+          />
+          <Button
+            external="https://www.linkedin.com/in/nhungnguyen0804/"
+            iconLeft={<LinkedInIcon width={sizeIcon} height={sizeIcon} />}
             type="cycle"
             target="_blank"
           />

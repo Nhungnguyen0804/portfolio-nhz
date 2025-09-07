@@ -1,0 +1,15 @@
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 1.2rem;
+}
+.navbarItem {
+  opacity: 0.75; /* mờ nhẹ  */
+}
+.navbarItem:hover {
+  opacity: 1;
+}
+.navbarItem.active {
+  opacity: 1;
+}

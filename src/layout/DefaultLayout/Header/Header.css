@@ -5,12 +5,13 @@
   width: 100%;
 
   z-index: 999;
+  padding: 5px 40px;
+  background: var(--body-bg-color);
 }
 
 .header-inner {
   width: 100%;
   height: var(--height-header);
-  background: transparent;
   display: flex;
   align-items: center; /* chcao */
   justify-content: space-between;
@@ -21,6 +22,11 @@
   font-size: 40px;
 }
 
-.header-link {
-  color: var(--body-text-color);
+.header-social-icon a {
+  transition: color 0.3s ease;
+}
+.header-social-icon a:hover {
+  /* svg co current color => doi mau bang the cha la a  */
+  color: var(--body-bg-color);
+  background-color: var(--body-text-color);
 }

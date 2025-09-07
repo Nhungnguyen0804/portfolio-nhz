@@ -9,6 +9,14 @@
   font-style: normal;
 }
 
+/* cho tất cả các phần tử trên trang. */
+/* reset css  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* tính luôn cả nội dung + padding + border. */
+}
+
 :root {
   --body-bg-color: black;
   --body-text-color: white;
@@ -16,19 +24,18 @@
   --height-header: 60px;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
 body {
   /* font-family: "Calibri", sans-serif; */
   height: 100vh;
   background: var(--body-bg-color);
   color: var(--body-text-color);
-}
 
-/* cho tất cả các phần tử trên trang. */
-/* reset css  */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* tính luôn cả nội dung + padding + border. */
+  overflow-x: hidden; /* chặn tràn ngang*/
+  position: relative;
 }
 
 a {
