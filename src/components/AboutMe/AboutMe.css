@@ -1,0 +1,34 @@
+.aboutMe {
+  margin-top: 50px;
+  background-color: black;
+  border-radius: 30px;
+  padding: 30px 70px;
+}
+
+.aboutMe-title {
+  display: flex;
+  justify-content: center; /* ngang */
+
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+  border-bottom: 2px solid white;
+}
+.font-pacifico {
+  font-family: "Pacifico", cursive;
+}
+.aboutMe-content {
+  display: flex;
+  font-size: 30px;
+}
+.aboutMe-content-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutMe-content-right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

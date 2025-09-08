@@ -1,0 +1,89 @@
+.flower-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: black;
+  overflow: hidden;
+  perspective: 1000px;
+  padding: 50px 0px;
+}
+
+.flowers {
+  position: relative;
+  transform: scale(0.9);
+}
+
+.flower {
+  position: absolute;
+  bottom: 10vmin;
+  transform-origin: bottom center;
+  z-index: 10;
+
+  --fl-speed: 0.8s;
+}
+
+.flower1 {
+  animation: moving-flower-1 4s linear infinite;
+}
+
+.allCanhHoa {
+  position: relative;
+  animation: blooming-flower 2s backwards;
+}
+
+.allCanhHoa1 {
+  animation-delay: 1.1s; /* 0.8 + 0.3 */
+}
+.allCanhHoa::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -100%);
+  width: 8vmin;
+  height: 8vmin;
+  background-color: #ff6bdf;
+  filter: blur(10vmin);
+}
+
+/* Leaf */
+.canhHoa {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 8vmin;
+  height: 11vmin;
+  border-radius: 49% 51% 47% 53% / 63% 61% 39% 37%;
+  background-color: #ffa7c3;
+  background-image: linear-gradient(to top, #b85486, #ffa7e8);
+  transform-origin: bottom center;
+  opacity: 0.9;
+  box-shadow: inset 0 0 2vmin rgba(255, 255, 255, 0.5);
+}
+.canhHoa2 {
+  transform: translate(-50%, -4%) rotateX(35deg);
+}
+.canhHoa3 {
+  transform: translate(-70%, -4%) rotateY(20deg) rotateX(35deg);
+}
+.canhHoa1 {
+  transform: translate(-30%, -3%) rotateY(20deg) rotateX(-35deg);
+}
+
+@keyframes moving-flower-1 {
+  0%,
+  100% {
+    transform: rotate(2deg);
+  }
+
+  50% {
+    transform: rotate(-2deg);
+  }
+}
+
+@keyframes blooming-flower {
+  0% {
+    transform: scale(0);
+  }
+}

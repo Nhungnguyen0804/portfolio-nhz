@@ -18,7 +18,13 @@
 }
 
 :root {
-  --body-bg-color: black;
+  --gradient-tim-den: linear-gradient(
+    270deg,
+    rgba(181, 98, 180, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  --body-bg-color: var(--gradient-tim-den);
   --body-text-color: white;
 
   --height-header: 60px;

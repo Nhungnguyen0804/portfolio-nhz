@@ -2,29 +2,49 @@
 .btn-wrapper {
   font-size: 1.6rem;
   font-weight: 700;
-  min-width: 100px;
+  min-width: 200px;
   padding: 9px 16px;
 
-  background-color: var(--body-bg-color);
+  background: transparent; /* nền trong suốt để thấy ::before */
   border: 2px solid var(--body-text-color);
   color: var(--body-text-color);
+  border: 2px solid white;
 
   display: flex;
   justify-content: center;
 
   cursor: pointer;
-  transform: color 0.5s ease;
+  border-radius: 10px;
+
+  /*  */
+  position: relative;
+  overflow: hidden;
+  transition: color 1s;
 }
 
 /* khi hover chữ đổi sang trắng */
 .btn-wrapper:hover {
-  background-color: var(--body-text-color);
+  /* background-color: var(--body-text-color);
   border: 2px solid var(--body-text-color);
-  color: var(--body-bg-color);
+  color: var(--body-bg-color); */
+  color: black;
 }
 
-/* btn forecast , temp,rain,wind ===============  */
-.activeBtn {
+.btn-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 150%;
+  height: 100%;
+  background-color: plum;
+  transform: scaleX(0) skewX(35deg);
+  transform-origin: left;
+  z-index: -1;
+  transition: transform 1s;
+}
+.btn-wrapper:hover::before {
+  transform: scaleX(1) skewX(35deg);
 }
 
 .btn-cycle {
@@ -41,20 +61,12 @@
   border: 1px solid var(--body-text-color);
 }
 
-.btn-transparent {
-}
-.btn-transparent:hover {
-}
-
-.btn-square {
-}
-
-/* size của btn: small medium large  */
-.btn-medium {
-}
-
 /* icon lech thi flex align center  */
 .button-icon {
   display: flex;
   align-items: center;
+}
+
+.btn-rectangle {
+  border-radius: 0%;
 }

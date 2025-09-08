@@ -3,10 +3,11 @@
   top: 0;
   left: 0;
   width: 100%;
+  border-bottom: 2px solid white;
 
-  z-index: 999;
-  padding: 5px 40px;
   background: var(--body-bg-color);
+  z-index: 999;
+  padding: 5px 50px;
 }
 
 .header-inner {
@@ -24,9 +25,15 @@
 
 .header-social-icon a {
   transition: color 0.3s ease;
+  transition: none !important;
+  background-color: transparent;
 }
-.header-social-icon a:hover {
+.header-social-icon a::before {
+  background-color: transparent;
+}
+.header-social-icon a:hover,
+.header-social-icon a:hover::before {
   /* svg co current color => doi mau bang the cha la a  */
-  color: var(--body-bg-color);
-  background-color: var(--body-text-color);
+  color: black;
+  background-color: white;
 }

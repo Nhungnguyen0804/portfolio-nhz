@@ -1,0 +1,71 @@
+.banner {
+  display: flex;
+  font-size: 25px;
+}
+
+.banner-left {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+
+  /*  */
+  flex-direction: column;
+}
+
+.banner-left-button {
+  display: flex;
+  padding: 40px 0;
+  gap: 20px;
+}
+
+.banner-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome {
+  white-space: nowrap; /* không xuống dòng */
+  overflow: hidden; /* ẩn chữ vượt ra */
+  width: 0;
+  animation: typing 4s steps(35, end) forwards;
+}
+
+.highlight {
+  font-weight: bold;
+}
+.highlight-pink {
+  color: plum;
+}
+.highlight-reactjs {
+  color: #01c0ff;
+}
+.highlight-js {
+  color: yellow;
+}
+.highlight-c {
+  color: rgb(0, 162, 255);
+}
+.line-name {
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+
+  white-space: nowrap; /* không xuống dòng */
+  overflow: hidden; /* ẩn chữ vượt ra */
+  width: 0;
+  animation: typing 4s steps(35, end) forwards;
+
+  padding-bottom: 20px;
+}
+.banner-left h1 {
+  line-height: 150%;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

@@ -37,6 +37,12 @@ function Navbar() {
           onClick={() => onUpdateActiveNavbarItem("home")}
         />
         <NavbarItem
+          content="About Me"
+          goToId="#about_me"
+          className={activeNavbarItem === "skill" ? "active" : ""}
+          onClick={() => onUpdateActiveNavbarItem("skill")}
+        />
+        <NavbarItem
           content="Skills"
           goToId="#skill"
           className={activeNavbarItem === "skill" ? "active" : ""}

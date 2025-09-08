@@ -46,7 +46,7 @@ function Header() {
           />
         </div>
         <div className="header-button">
-          <Button content="Connect With Me!" />
+          <Button content="Connect With Me!" type="rectangle" />
         </div>
       </div>
     </div>

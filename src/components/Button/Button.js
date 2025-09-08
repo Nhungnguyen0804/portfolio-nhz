@@ -9,10 +9,8 @@ function Button({
   iconLeft,
   content,
   iconRight,
-  activeContent,
-  type = "", // cycle, square, transparent
+  type = "", // cycle, square, rectangle, transparent , border
   size = "", // small, medium, large
-
   onClick,
   ...attribute
 }) {
@@ -33,17 +31,14 @@ function Button({
   if (type === "cycle") type_class = "btn-cycle";
   if (type === "transparent") type_class = "btn-transparent";
   if (type === "square") type_class = "btn-square";
+  if (type === "rectangle") type_class = "btn-rectangle";
 
   let size_class = ""; // small (default) , medium, large
   if (size === "medium") size_class = "btn-medium";
-  let activeClass = "";
-  if (content === activeContent) activeClass = "activeBtn";
-  else activeClass = "";
+
   return (
     <Tag
-      className={
-        wrapper_class + " " + type_class + " " + activeClass + " " + size_class
-      }
+      className={wrapper_class + " " + type_class + " " + size_class}
       {...props}
       {...attribute}
     >

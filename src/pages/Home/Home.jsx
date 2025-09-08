@@ -1,15 +1,16 @@
+import AboutMe from "../../components/AboutMe/AboutMeSection";
+import Banner from "../../components/Banner/Banner";
+import StartsEffect from "../../components/StartsEffect/StarsEffect";
 import "./Home.css";
 
 function Home() {
-  const items = Array.from({ length: 1000 }, (_, i) => (
-    <div key={i}>Homepage</div>
-  ));
-
   return (
-    <div>
-      <section id="home"> HOME </section>
-      {items}
-      <section id="skill">Skills</section>
+    <div className="home">
+      <StartsEffect />
+      <div className="home-content">
+        <Banner />
+        <AboutMe />
+      </div>
     </div>
   );
 }
