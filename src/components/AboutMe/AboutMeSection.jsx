@@ -2,11 +2,11 @@ import FlowerEffect from "../FlowerEffect/FlowerEffect";
 import "./AboutMe.css";
 function AboutMe() {
   return (
-    <section className="aboutMe" id="about-me">
+    <section className="aboutMe" id="about_me">
       <h1 className="aboutMe-title">~About Me~</h1>
       <div className="aboutMe-content">
         <div className="aboutMe-content-left">
-          <div>Heloooooooooooooooo hoa la la</div>
+          <FlowerEffect />
         </div>
         <div className="aboutMe-content-right">
           <div className="">
@@ -33,31 +33,32 @@ function AboutMe() {
               </ul>
             </div>
           </div>
-          <div className="">
+          <div className="aboutMe-edu">
             {" "}
-            <div>Education</div>
+            <h1 className="aboutMe-edu-title">Education</h1>
             <ul style={{ listStyle: "none", padding: "0", margin: "0" }}>
               <li>
-                VNU UNIVERSITY OF ENGINEERING AND TECHNOLOGY (VIETNAM NATIONAL
-                UNIVERSITY, HANOI)
+                💎 VNU UNIVERSITY OF ENGINEERING AND TECHNOLOGY (VIETNAM
+                NATIONAL UNIVERSITY, HANOI)
               </li>
               <li>
+                💎
                 <b>
-                  <i>10/2022 - 2026</i>
+                  <i> 10/2022 - 2026</i>
                 </b>
               </li>
               <li>
-                Major :<span>INFORMATION SYSTEMS</span>
+                💎 Major :<span>INFORMATION SYSTEMS</span>
               </li>
               <li>
-                GPA :<span>3.36/4</span>
+                💎 GPA :<span>3.36/4</span>
               </li>
             </ul>
           </div>
-          <div>
-            <div>Objective</div>
+          <div className="aboutMe-obj">
+            <h1 className="aboutMe-obj-title">Objective</h1>
             <p>
-              I am a final-year Information Systems student with a strong
+              💎 I am a final-year Information Systems student with a strong
               interest in Frontend development. I aim to work as a ReactJS
               Intern to apply my knowledge, gain real project experience, and
               learn new technologies. My long-term goal is to become a skilled
@@ -67,8 +68,6 @@ function AboutMe() {
           </div>{" "}
         </div>
       </div>
-
-      <FlowerEffect />
     </section>
   );
 }

@@ -28,6 +28,10 @@
   --body-text-color: white;
 
   --height-header: 60px;
+  --fl-speed: 0.8s;
+
+  /* hoa  */
+  --speed-leaf: 2s;
 }
 
 html {
