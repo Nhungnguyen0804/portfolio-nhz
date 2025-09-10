@@ -1,9 +1,9 @@
-import FlowerEffect from "../FlowerEffect/FlowerEffect";
+import FlowerEffect from "../../../components/FlowerEffect/FlowerEffect";
 import "./AboutMe.css";
 function AboutMe() {
   return (
-    <section className="aboutMe" id="about_me">
-      <h1 className="aboutMe-title">~About Me~</h1>
+    <section className="aboutMe section" id="about_me">
+      <h1 className="general-title aboutMe-title">~About Me~</h1>
       <div className="aboutMe-content">
         <div className="aboutMe-content-left">
           <FlowerEffect />

@@ -1,5 +1,5 @@
-import images from "../../assets/images/images";
-import Button from "../Button/Button";
+import images from "../../../assets/images/images";
+import Button from "../../../components/Button/Button";
 import "./Banner.css";
 function Banner() {
   return (
@@ -29,12 +29,18 @@ function Banner() {
           </span>
         </p>
         <div className="banner-left-button">
-          <Button content="Contact me!" />
-          <Button content="My CV" />
+          <Button
+            content="Contact me!"
+            external="mailto:nhungnguyen8404@gmail.com"
+          />
+          <Button
+            onClick={() => window.open("/cv.pdf", "_blank")}
+            content="My CV"
+          />
         </div>
       </div>
       <div className="banner-right">
-        <img src={images.avatar} width="70%" />
+        <img className="banner-img" src={images.avatar} width="70%" />
       </div>
     </section>
   );

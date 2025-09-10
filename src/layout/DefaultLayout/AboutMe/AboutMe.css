@@ -1,17 +1,10 @@
 .aboutMe {
-  margin-top: 50px;
   background-color: rgb(34, 0, 25);
   border-radius: 30px;
   padding: 30px 70px;
 }
-
 .aboutMe-title {
-  display: flex;
   justify-content: center; /* ngang */
-
-  font-family: "Pacifico", cursive;
-  font-size: 40px;
-  border-bottom: 2px solid white;
 }
 .font-pacifico {
   font-family: "Pacifico", cursive;

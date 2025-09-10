@@ -1,9 +1,9 @@
 @font-face {
   font-family: "Pacifico";
   /* toi uu tren nhieu trinh duyet */
-  src: url("../../assets/fonts/Pacifico-Regular.woff2") format("woff2"),
-    url("../../assets/fonts/Pacifico-Regular.woff") format("woff"),
-    url("../../assets/fonts/Pacifico-Regular.ttf") format("truetype");
+  src: url("../../../assets/fonts/Pacifico-Regular.woff2") format("woff2"),
+    url("../../../assets/fonts/Pacifico-Regular.woff") format("woff"),
+    url("../../../assets/fonts/Pacifico-Regular.ttf") format("truetype");
 
   font-weight: normal;
   font-style: normal;
@@ -60,6 +60,27 @@ a:active {
   color: var(--body-text-color);
 }
 
+.general-title {
+  display: flex;
+
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+  border-bottom: 2px solid white;
+}
+.general-h2 {
+  display: flex;
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
+  margin-top: 20px;
+}
 /* CSS chỉ áp dụng cho màn hình có chiều rộng tối đa 768px (mobile và tablet) */
 @media (max-width: 768px) {
+}
+
+.section {
+  margin-top: 50px;
+}
+
+.marginTop130px {
+  margin-top: 130px;
 }

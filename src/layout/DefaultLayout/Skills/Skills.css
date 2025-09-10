@@ -1,0 +1,53 @@
+#skill {
+  display: flex;
+  flex-direction: column;
+}
+/* all skill  */
+
+/* chung  */
+.skillList {
+  margin: 20px 40px;
+  display: flex;
+}
+.softSkillList {
+  --hong: rgb(255, 145, 216);
+
+  flex-wrap: nowrap;
+  overflow: auto;
+  padding: 40px;
+  gap: 40px;
+}
+.techSkillList {
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.skill-item {
+  display: flex;
+  flex-direction: column;
+}
+.skillItem-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 15px solid var(--hong);
+}
+
+/* riêng cho soft  */
+.softSkillList .skillItem-img {
+  border-radius: 50%; /* tròn  */
+  background-color: white;
+}
+.techSkillList .skillItem-img {
+  border-radius: 10%;
+  background-color: white;
+}
+.skillItem-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  font-size: 25px;
+}

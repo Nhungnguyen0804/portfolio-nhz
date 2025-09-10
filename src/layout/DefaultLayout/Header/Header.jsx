@@ -9,6 +9,7 @@ import {
 import Button from "../../../components/Button/Button";
 function Header() {
   const sizeIcon = "25px";
+  const minWidth = "10px";
   return (
     <div className="header-wrapper">
       <div className="header-inner">
@@ -31,22 +32,29 @@ function Header() {
             iconLeft={<GithubIcon width={sizeIcon} height={sizeIcon} />}
             type="cycle"
             target="_blank"
+            minWidth={minWidth}
           />
           <Button
             external="mailto:nhungnguyen8404@gmail.com"
             iconLeft={<EmailIcon width={sizeIcon} height={sizeIcon} />}
             type="cycle"
             target="_blank"
+            minWidth={minWidth}
           />
           <Button
             external="https://www.linkedin.com/in/nhungnguyen0804/"
             iconLeft={<LinkedInIcon width={sizeIcon} height={sizeIcon} />}
             type="cycle"
             target="_blank"
+            minWidth={minWidth}
           />
         </div>
         <div className="header-button">
-          <Button content="Connect With Me!" type="rectangle" />
+          <Button
+            content="Connect With Me!"
+            type="rectangle"
+            external="mailto:nhungnguyen8404@gmail.com"
+          />
         </div>
       </div>
     </div>

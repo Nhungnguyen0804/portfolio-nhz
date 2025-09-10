@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 //  <Button internal = "linkto" external = "linkto" />
 
 function Button({
+  minWidth = "200px",
   internal,
   external,
   iconLeft,
@@ -12,6 +13,7 @@ function Button({
   type = "", // cycle, square, rectangle, transparent , border
   size = "", // small, medium, large
   onClick,
+  className,
   ...attribute
 }) {
   let Tag = "button";
@@ -38,12 +40,15 @@ function Button({
 
   return (
     <Tag
-      className={wrapper_class + " " + type_class + " " + size_class}
+      className={
+        wrapper_class + " " + type_class + " " + size_class + " " + className
+      }
       {...props}
       {...attribute}
+      style={{ minWidth: `${minWidth}` }}
     >
       {iconLeft && <span className="button-icon">{iconLeft}</span>}
-      {content && <span>{content}</span>}
+      {content && <span className="button-content">{content}</span>}
       {iconRight && (
         <span className="button-icon" style={{ marginLeft: "10px" }}>
           {iconRight}
