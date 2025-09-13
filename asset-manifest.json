@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-nhz/static/css/main.8af0a6bf.css",
-    "main.js": "/portfolio-nhz/static/js/main.e466c8ea.js",
+    "main.js": "/portfolio-nhz/static/js/main.0a32f44f.js",
     "static/js/453.ad7768ec.chunk.js": "/portfolio-nhz/static/js/453.ad7768ec.chunk.js",
     "static/media/weathery.png": "/portfolio-nhz/static/media/weathery.2eff064280faf453874a.png",
     "static/media/teamwork.gif": "/portfolio-nhz/static/media/teamwork.8f87a2111687335ce968.gif",
@@ -20,11 +20,11 @@
     "static/media/Pacifico-Regular.woff2": "/portfolio-nhz/static/media/Pacifico-Regular.d75d5ecea13c228ed785.woff2",
     "index.html": "/portfolio-nhz/index.html",
     "main.8af0a6bf.css.map": "/portfolio-nhz/static/css/main.8af0a6bf.css.map",
-    "main.e466c8ea.js.map": "/portfolio-nhz/static/js/main.e466c8ea.js.map",
+    "main.0a32f44f.js.map": "/portfolio-nhz/static/js/main.0a32f44f.js.map",
     "453.ad7768ec.chunk.js.map": "/portfolio-nhz/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8af0a6bf.css",
-    "static/js/main.e466c8ea.js"
+    "static/js/main.0a32f44f.js"
   ]
 }
