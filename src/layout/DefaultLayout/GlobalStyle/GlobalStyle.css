@@ -73,9 +73,6 @@ a:active {
   font-size: 30px;
   margin-top: 20px;
 }
-/* CSS chỉ áp dụng cho màn hình có chiều rộng tối đa 768px (mobile và tablet) */
-@media (max-width: 768px) {
-}
 
 .section {
   margin-top: 50px;
@@ -83,4 +80,19 @@ a:active {
 
 .marginTop130px {
   margin-top: 130px;
+}
+/* CSS chỉ áp dụng cho màn hình có chiều rộng tối đa 768px (mobile và tablet) */
+@media (max-width: 768px) {
+  .App {
+    display: flex;
+    justify-content: center;
+  }
+  .container,
+  .content {
+    width: 100vh;
+  }
+  html,
+  body {
+    min-width: 768px; /* đảm bảo luôn >= chiều width màn hình */
+  }
 }

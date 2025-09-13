@@ -73,3 +73,9 @@
 .btn-rectangle {
   border-radius: 0%;
 }
+
+@media (max-width: 768px) {
+  .btn-wrapper {
+    font-size: 15px;
+  }
+}

@@ -1,3 +1,9 @@
 .home-content {
   margin: 0 50px;
 }
+/* CSS chỉ áp dụng cho màn hình có chiều rộng tối đa 768px (mobile và tablet) */
+@media (max-width: 768px) {
+  .home-content {
+    margin: 0 30px;
+  }
+}

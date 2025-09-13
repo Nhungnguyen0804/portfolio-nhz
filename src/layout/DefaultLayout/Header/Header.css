@@ -37,3 +37,14 @@
   color: black;
   background-color: white;
 }
+
+/* CSS chỉ áp dụng cho màn hình có chiều rộng tối đa 768px (mobile và tablet) */
+@media (max-width: 768px) {
+  .header-wrapper {
+    padding: 5px 10px;
+  }
+  .logo {
+    font-family: "Pacifico", cursive;
+    font-size: 18px;
+  }
+}

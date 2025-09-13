@@ -4,7 +4,7 @@ import "./Banner.css";
 function Banner() {
   return (
     <section className="banner" id="home">
-      <div className="banner-left">
+      <div className="banner-left" width="50%">
         <p>
           <div className="welcome" style={{ lineHeight: "180%" }}>
             Welcome to my Portfolio!🌹
@@ -40,7 +40,7 @@ function Banner() {
         </div>
       </div>
       <div className="banner-right">
-        <img className="banner-img" src={images.avatar} width="70%" />
+        <img className="banner-img" src={images.avatar} width="90%" />
       </div>
     </section>
   );

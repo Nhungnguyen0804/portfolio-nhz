@@ -69,3 +69,25 @@
     width: 100%;
   }
 }
+
+/* CSS chỉ áp dụng cho màn hình có chiều rộng tối đa 768px (mobile và tablet) */
+@media (max-width: 768px) {
+  .banner {
+    font-size: 20px;
+    flex-direction: column;
+  }
+  .line-name {
+    font-size: 30px;
+  }
+  .banner-img {
+    width: 50%;
+  }
+  .banner-left {
+    flex: none; /* không co giãn theo flex */
+    width: 100%;
+  }
+  .banner-right {
+    flex: none; /* không co giãn theo flex */
+    width: 100%;
+  }
+}
