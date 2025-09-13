@@ -6,7 +6,7 @@ import DefaultLayout from "./layout/DefaultLayout/DefaultLayout";
 import { Fragment } from "react/jsx-runtime";
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio">
       <div className="App">
         <Routes>
           {publicRoutes.map((route, index) => {
